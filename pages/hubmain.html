@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/app.css">
+    <!-- Icones-->
+      <link href="fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">NGFinance</a>
+    <button class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#navbarNavDropdown" 
+    aria-controls="navbarNavDropdown" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Relatórios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+<form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+</nav>
+        </header>
+
+       
+            <div class="container wrapper">
+                <div class="container_Wellcome">
+                <p>Seu painel de controle para gerenciamento de clientes e faturamento.</p>
+                </div>
+                       <section class="cards">
+<div class="row g-3">
+
+  <div class="col-12 col-md-3 ">
+    <div class="card shadow-sm border border-primary rounded-3">
+      <div class="card-body">
+        <h6 class="text-muted">Pedidos</h6>
+        <h3>54</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3">
+    <div class="card shadow-sm border border-primary rounded-3">
+      <div class="card-body">
+        <h6 class="text-muted">Clientes</h6>
+        <h3>128</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3">
+    <div class="card shadow-sm border border-primary rounded-3">
+      <div class="card-body">
+        <h6 class="text-muted">Faturamento</h6>
+        <h3>R$ 15.800</h3>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="card border-primary mb-3 mt-3" style="max-width: 18rem;" >
+  <div class="card-header">Meta em andamento</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">KPI'S</h5>
+    <p class="card-text">Valor a ser atingido.</p>
+  </div>
+  <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>
+</div>
+<div class="card border-primary mb-3 mt-3" style="max-width: 18rem;" >
+  <div class="card-header">Metrica Mensal</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Primeira Semana</h5>
+    <p class="card-text">Em andamento...</p>
+  </div>
+<div class="container_Grafico">
+<canvas id="myChart">
+ </canvas>
+</div>
+ </div>
+  </div>
+   <div>
+
+ 
+</div>
+
+
+</div>
+
+        </section>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+<script>
+const ctx = document.getElementById('myChart');
+
+const data = {
+  labels: ['Dia 01', 'Dia 01', 'Dia 02', 'Dia 03', 'Dia 04', 'Dia 05', 'Dia 06'],
+  datasets: [{
+    label: 'vendas',
+    data: [65, 59, 80, 81, 26, 55, 40],
+    borderColor: 'rgb(75, 192, 192)',
+    fill: false
+  }]
+};
+
+const config = {
+  type: 'line',
+  data: data,
+  options: {
+    responsive: true
+  }
+};
+
+new Chart(ctx, config);
+window.addEventListener('resize', function() {
+    chart.resize();
+});
+</script>
+</body>
+</html>
