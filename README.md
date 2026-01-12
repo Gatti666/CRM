@@ -1,5 +1,5 @@
 # CRM
-dashboard simples com uso de javascript - Bootstrap - Projeto Fullstack
+dashboard simples com uso de javascript - Bootstrap - Projeto Fullstack -   EM ANDAMENTO
 
 📊 CRM – Sistema de Gestão de Relacionamento com Clientes
 🧩 Visão Geral
@@ -73,21 +73,6 @@ crm/
 ├── database.sql
 └── index.php
 🤝 Contribuição
-
-Contribuições são bem-vindas!
-
-Faça um fork do projeto
-
-Crie uma branch (git checkout -b feature/nova-feature)
-
-Commit suas alterações (git commit -m 'Nova feature')
-
-Push para a branch (git push origin feature/nova-feature)
-
-Abra um Pull Request
-
-
-👩‍💻 Autora
 
 Natalia Gatti
 Desenvolvedora Junior
