@@ -64,8 +64,8 @@
                 <div class="container_Wellcome">
                 <p>Seu painel de controle para gerenciamento de clientes e faturamento.</p>
                 </div>
-                       <section class="cards">
-<div class="row g-3">
+                       
+<div class="row g-15">
 
   <div class="col-12 col-md-3 ">
     <div class="card shadow-sm border border-primary rounded-3">
@@ -93,70 +93,72 @@
       </div>
     </div>
   </div>
-
 </div>
-<div class="card border-primary mb-3 mt-3" style="max-width: 18rem;" >
-  <div class="card-header">Meta em andamento</div>
-  <div class="card-body text-primary">
-    <h5 class="card-title">KPI'S</h5>
-    <p class="card-text">Valor a ser atingido.</p>
+
+<div class="row g-15">
+
+<div class="col-sm-8">
+  <div class="card border-primary mb-3 mt-3" style="width: 29rem;" >
+    <div class="card-header"><h6>Aguardando a Aprovação do cliente</h6></div>
+      <table class="table table-bordered table-hover">
+        <thead class="table-light"></thead>
+        <tbody>
+            <tr>
+              <td><input type="checkbox" onchange="ocultarLinha(this)"></td>
+                
+                <td>João</td>
+                <td>XXY-890</td>  
+                </tr>
+            <tr>
+                <td><input type="checkbox" onchange="ocultarLinha(this)"></td>
+                
+                <td>Maria</td>
+                <td>YKP-958</td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" onchange="ocultarLinha(this)"></td>
+                </td>
+                
+                <td>Pedro</td>
+                <td>HDN-0000</td>
+                
+            </tr>
+             <tr>
+                <td>
+                    <input type="checkbox" onchange="ocultarLinha(this)"></td>
+                </td>
+                
+                <td>Pedro</td>
+                <td>HDN-0000</td>
+                
+            </tr>
+
+             <tr>
+                <td>
+                    <input type="checkbox" onchange="ocultarLinha(this)"></td>
+                </td>
+                
+                <td>Pedro</td>
+                <td>HDN-0000</td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+    
+</div>
+
+<div class="col-sm-4">col-4</div>
+
   </div>
-  <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 </div>
-</div>
-<div class="card border-primary mb-3 mt-3" style="max-width: 18rem;" >
-  <div class="card-header">Metrica Mensal</div>
-  <div class="card-body text-primary">
-    <h5 class="card-title">Primeira Semana</h5>
-    <p class="card-text">Em andamento...</p>
-  </div>
-<div class="container_Grafico">
-<canvas id="myChart">
- </canvas>
-</div>
- </div>
-  </div>
-   <div>
-
- 
-</div>
-
-
-</div>
-
-        </section>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet" >
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    
-<script>
-const ctx = document.getElementById('myChart');
-
-const data = {
-  labels: ['Dia 01', 'Dia 01', 'Dia 02', 'Dia 03', 'Dia 04', 'Dia 05', 'Dia 06'],
-  datasets: [{
-    label: 'vendas',
-    data: [65, 59, 80, 81, 26, 55, 40],
-    borderColor: 'rgb(75, 192, 192)',
-    fill: false
-  }]
-};
-
-const config = {
-  type: 'line',
-  data: data,
-  options: {
-    responsive: true
-  }
-};
-
-new Chart(ctx, config);
-window.addEventListener('resize', function() {
-    chart.resize();
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+<script src="../js/charts.js"></script>
+<script src="../js/checkbox.js"></script>
 </body>
 </html>
