@@ -1,67 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap");
 
 /* 
    RESET / BASE
  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f5f6fa;
-    font-family: 'Poppins', sans-serif;
-    color: #212529;
+  background-color: #f5f6fa;
+  font-family: "Poppins", sans-serif;
+  color: #212529;
 }
-
-
 
 /* 
    NAVBAR
  */
 .navbar-brand {
-    font-weight: 600;
-    letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .navbar-nav .nav-link {
-    padding: 0.5rem 1rem;
-    transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #008000 !important;
+  color: #008000 !important;
 }
 
 .dropdown-menu {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .dropdown-item:hover {
-    background-color: #f1f3f5;
-    color: #008000 
-}   
-
-.container_Wellcome{
-    margin-top: 1rem;
-    text-align: center;
-    padding: 2rem;
+  background-color: #f1f3f5;
+  color: #008000;
 }
 
-  table {
-            border-collapse: collapse;
-            width: auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+.container_Wellcome {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
